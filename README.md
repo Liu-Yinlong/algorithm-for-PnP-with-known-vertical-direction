@@ -28,6 +28,8 @@ Algorithm for PnP with known vertical direction
 
 ...
 
+### Save file is
+[R[0]...R[8],t[0],t[1],t[2],run_time(ms)]
 
   >Author: Yinlong.Liu(at)TUM.de
   
