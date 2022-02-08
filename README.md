@@ -2,12 +2,12 @@
 Algorithm for PnP with known vertical direction
 ***********
 
-+ gen_data.m->octave/matlab code to generate synthetic data
-+ main_test.m->octave/matlab code to test the bin file
++ **gen_data.m**->octave/matlab code to generate synthetic data
++ **main_test.m**->octave/matlab code to test the bin file
 
 
-+ main.c main.h->our algorithm
-+ misc_func.c misc_func.h-> details for our algorithm
++ **main.c; main.h**->our algorithm
++ **misc_func.c; misc_func.h**-> details for our algorithm
 **************
 ```
 1. To start, run compile.sh
