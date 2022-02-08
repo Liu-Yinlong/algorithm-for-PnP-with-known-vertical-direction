@@ -1,7 +1,7 @@
 function [R_gt,t_gt]=gen_data(input_number,outlier_rate,noise_level,data_file_name)
   
-  number_outlier=round(input_number*noise_level);
-  number_inlier=input_number-number_outlier;
+  number_outlier=round(input_number*outlier_rate);
+  %number_inlier=input_number-number_outlier;
   
   %==========generate 3D point===============
   
