@@ -51,13 +51,19 @@ s2_2=cross(I2,v_2d);
 
 angle_1=acos(dot(s1,s2_1)/(norm(s1)*norm(s2_1)));
 R_2_1=rotationVectorToMatrix(v_2d*angle_1);
-if(norm(R_2_1*X-I1)>=1e-10)
-    R_2_1=rotationVectorToMatrix(-v_2d*angle_1);
+%if(norm(R_2_1*X-I1)>=1e-10)
+%    R_2_1=rotationVectorToMatrix(-v_2d*angle_1);
+%end
+if(dot(cross(s1,s2_1),v_2d)<0)
+   R_2_1=expm(-M_V*angle_1); 
 end
 angle_2=acos(dot(s1,s2_2)/(norm(s1)*norm(s2_2)));
 R_2_2=rotationVectorToMatrix(v_2d*angle_2);
-if(norm(R_2_2*X-I2)>=1e-10)
-    R_2_2=rotationVectorToMatrix(-v_2d*angle_2);
+%if(norm(R_2_2*X-I2)>=1e-10)
+%    R_2_2=rotationVectorToMatrix(-v_2d*angle_2);
+%end
+if(dot(cross(s1,s2_2),v_2d)<0)
+   R_2_2=expm(-M_V*angle_2); 
 end
 
 R_opt_1=R_2_1*R_1;
