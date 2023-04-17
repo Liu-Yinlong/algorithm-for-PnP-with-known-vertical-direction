@@ -1,5 +1,6 @@
 # Algorithm-for-PnP-with-known-vertical-direction
 Algorithm for PnP with known vertical direction
+>Y. Liu, G. Chen and A. Knoll, "Absolute Pose Estimation with a Known Direction by Motion Decoupling," in IEEE Transactions on Circuits and Systems for Video Technology, doi: 10.1109/TCSVT.2023.3264451.
 ***********
 
 + **gen_data.m**->matlab code to generate synthetic data
